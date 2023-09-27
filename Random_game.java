@@ -51,7 +51,7 @@ public class Random_game     // class Random_game
         System.out.println("");
 
 
-        System.out.print("Enter 1 to play another round or 2 to exit: ");
+        System.out.print("Enter 1 to play another round or 2 to exit: ");   // asking the user whether to go for another round or not
         int playAgain = sc.nextInt();
         System.out.println("");
 
