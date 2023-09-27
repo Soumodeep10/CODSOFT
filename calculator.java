@@ -1,13 +1,14 @@
 import java.util.*;
-public class calculator {
-    public static void main(String args[])
+public class calculator // class calculator
+{
+    public static void main(String args[]) // main method
     {
        Scanner sc = new Scanner(System.in);
        int marks_limit;
-       int marks[] = new int[50];
+       int marks[] = new int[50];   // declaring  marks array
 
        System.out.print("Enter the number of subjects: ");
-       marks_limit= sc.nextInt();
+       marks_limit= sc.nextInt();  
        System.out.println(" ");
 
        System.out.println("Enter the number aquired in every subjects out of 100: ");
@@ -16,18 +17,19 @@ public class calculator {
           marks[i] = sc.nextInt();
        }
 
-       calculaTor(marks,marks_limit);
+       calculaTor(marks,marks_limit);  // calling calculaTor function 
       
        sc.close();
     }
-    public static void calculaTor(int marks[],int marks_limit){
+    public static void calculaTor(int marks[],int marks_limit)   // specifying calculaTor function
+    {
       
       double total = 0;
        for(int i=0;i<marks_limit;i++){
-         total += marks[i];
+         total += marks[i];   // calculating total 
        }
 
-       double avg_percent  = (total/marks_limit);
+       double avg_percent  = (total/marks_limit);   // calculating average percentage
        if(avg_percent>90)
        {
          System.out.println("Grade is O ");
